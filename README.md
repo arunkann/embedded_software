@@ -10,16 +10,16 @@ Basics:
 4. Aligned Malloc and Free
 
 Device Driver:
-5. CAN driver register programming using bitfields
-6. CAN driver register programming using macros
-7. Update Bits/Field in a register
+1. CAN driver register programming using bitfields
+2. CAN driver register programming using macros
+3. Update Bits/Field in a register
 
 Pointers:
-8. Arrays of Pointers
-9. Pointer to Arrays
-10. Function Pointer Arrays
+1. Arrays of Pointers
+2. Pointer to Arrays
+3. Function Pointer Arrays
 
 Simple Algorithms:
-11. Fibonacci sequence - recursive implementation
-12. Binary search in an array
-13. Reverse linked list
+1. Fibonacci sequence - recursive implementation
+2. Binary search in an array
+3. Reverse linked list
