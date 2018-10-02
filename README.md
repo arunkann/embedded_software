@@ -23,3 +23,6 @@ Simple Algorithms:
 1. Fibonacci sequence - recursive implementation
 2. Binary search in an array
 3. Reverse linked list
+
+Multi-threading:
+1. Pthreads & Mutexes
