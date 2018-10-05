@@ -24,5 +24,6 @@ Simple Algorithms:
 2. Binary search in an array
 3. Reverse linked list
 
-Multi-threading:
+Multi-threading & Multi-processing:
 1. Pthreads & Mutexes
+2. Fork & Posix Semaphores
