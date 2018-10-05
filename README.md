@@ -24,6 +24,6 @@ Simple Algorithms:
 2. Binary search in an array - binsearch_array.c
 3. Reverse linked list - reverse_list.c
 
-Multi-threading & Multi-processing:
+Multi-threading & Multi-processing: (Compile-line: Use -pthread and -lrt)
 1. Pthreads & Mutexes - threads.c
 2. Fork & Posix Semaphores - process.c
