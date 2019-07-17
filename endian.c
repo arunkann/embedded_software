@@ -2,7 +2,7 @@
 
 int main()
 {
-    unsigned int a = 1; /* this spans multiple bytes i.e. multiple memory address locations */
+    int a = 1; /* minimum size of int data type is at least 2 bytes per C standard */
     char *aptr = (char*) &a; /* aptr points to (lowest) address where a is located */
 
     /* if Low Address contains LSB, then LE machine.
