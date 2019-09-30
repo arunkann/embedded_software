@@ -1,4 +1,9 @@
 #include <stdio.h>
+#include <stdlib.h>
+
+/* Fibonacci sequence is a series of numbers where
+ * 'next' number is found by adding up the two numbers before it.
+ */
 
 int fibonacci(int n, int *arr)
 {
@@ -21,9 +26,10 @@ int fibonacci(int n, int *arr)
 
 int main()
 {
-    int n = 4;
-    int arr[10];
+    int n = 20;
+    int *arr;
 
+    arr = malloc(n * sizeof(int));
     fibonacci(n, arr);
 
     printf("fibo list of %d numbers\n", n);
