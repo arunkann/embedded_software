@@ -1,5 +1,19 @@
 #include <stdio.h>
 
+/* Visual:
+ *
+ *    Say lsbpos = 5 and msbpos = 25
+ * 
+ *    31 30 39 28  27 26 25 24  23 22 21 20  19 18 17 16
+ *     1  1  1  1   1  1  1  1
+ *
+ *    15 14 13 12  11 10 09 08  07 06 05 04  03 02 01 00
+ *                                        1   1  1  1  1
+ *
+ *    With this mask, you can AND to clear out in-between.
+ *
+ */
+
 int update_bits(int val, int field, int msb_pos, int lsb_pos)
 {
     int mask1 = (1 << lsb_pos) - 1; /* 1's from 0 to lsb_pos */

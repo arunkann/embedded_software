@@ -1,5 +1,7 @@
 #include <stdio.h>
 
+/* Binary search assumes the array is already sorted. */
+
 int binary_search(int *aptr, int size, int value)
 {
     int start_idx = 0, end_idx = size-1;

@@ -27,3 +27,9 @@ Simple Algorithms:
 Multi-threading & Multi-processing: (Compile-line: Use -pthread and -lrt)
 1. Pthreads & Mutexes - threads.c
 2. Fork & Posix Semaphores - process.c
+
+TBD:
+1. Processing command line args
+2. Variable length data at the end of a struct
+3. Circular linked list, with double pointers
+4. Binary search tree

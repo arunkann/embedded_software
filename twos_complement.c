@@ -19,7 +19,7 @@ void twos_complement(int num)
  * 2powB-1 positive numbers and 2powB negative numbers
  * using 2's complement notation.
  * This notation allows same arithmetic circuitry
- * to be used to be used for postive and negative numbers.
+ * to be used for postive and negative numbers.
  * Negative numbers have MSB set to 1.
  */
 int main()
