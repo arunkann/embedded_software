@@ -4,6 +4,9 @@
 
 void test(unsigned int jump_index, double a, double b)
 {
+    /* This is just to illustrate an example of calling interrupt handler based on interrupt # */
+    /* Different interrupt handler function pointers are registered for different interrupt # and
+    based on that the appropriate function ptr is invoked. */
     static double (*pf[])(double, double) = {pow, pow, pow, pow};
 
     if (jump_index < sizeof(pf) / sizeof(*pf))

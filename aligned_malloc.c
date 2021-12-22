@@ -17,6 +17,7 @@
  *
  */
 
+/* Expect to find only one 1 in the digit */
 bool is_power_of_2(size_t alignment)
 {
     if (alignment == 0)
@@ -25,10 +26,12 @@ bool is_power_of_2(size_t alignment)
     if (alignment == 1)
 	return false;
 
+    /* find the first 1 */
     while (!(alignment  & 1)) {
         alignment = alignment >> 1;
     }
 
+    /* get rid of the 1 */
     alignment = alignment >> 1;
 
     if (alignment == 0)
@@ -84,6 +87,7 @@ void* aligned_malloc(size_t required_bytes, size_t alignment)
     /* p2 is void* so can't dereference.
        Instead treat it as void** i.e. pointer to array of void*.
        This allows you to go back by 1 and save p1 in an earlier slot. */
+    printf("malloc addr saved at: 0x%p\n", &((void **)p2)[-1]);
     ((void **)p2)[-1] = p1;
     /* Alternatively, treat it as pointer type */
     //*(((uintptr_t*)p2)-1) = (uintptr_t)p1;

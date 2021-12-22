@@ -19,10 +19,12 @@ int main()
 
     /* dereference to get char* */
     for (int i=0; i<n; ++i) {
+        printf("ptr addr: 0x%p\n", &myStrPtr[i]);
         printf("%s\n", myStrPtr[i]);
     }
 
     for (; p<myStrPtr+n; ++p) {
+        printf("ptr addr: 0x%p\n", p);
         printf("%s\n", *p); //*p dereferences to char* - which is content of the array
     }
 }
